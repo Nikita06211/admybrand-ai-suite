@@ -56,15 +56,15 @@ export default function HeroSection() {
         {/* Dashboard Illustration + Overlays */}
         <div className="relative md:w-1/2 flex justify-center items-center min-h-[26rem]">
           {/* Background Glow */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-blue-700/30 via-purple-600/30 to-fuchsia-600/20 blur-2xl rounded-3xl pointer-events-none" />
+          <div className="absolute inset-20 bg-gradient-to-tr from-blue-700/30 via-purple-600/30 to-fuchsia-600/20 blur-2xl rounded-3xl pointer-events-none" />
           {/* Glass-effect Illustration Card */}
-          <div className="relative z-10 rounded-3xl backdrop-blur-2xl bg-white/5 p-6 shadow-xl max-w-lg flex flex-col items-center border-[1.5px] border-white/10">
+          <div className="relative z-10 rounded-3xl backdrop-blur-xl bg-white/5 p-6 shadow-[0_0_20px_8px_rgba(168,85,247,0.35)] max-w-lg flex flex-col items-center border-0 border-white/10">
             <Image
               src="/hero-ai-dashboard.jpg"
               width={540}
               height={340}
               alt="ADmyBRAND dashboard illustration"
-              className="rounded-2xl shadow-2xl border border-purple-600/50"
+              className="rounded-2xl shadow-[0_0_32px_8px_rgba(168,85,247,0.35)] border border-purple-600/10"
               priority
             />
             {/* Optional: Sparkle or glow effects using SVG/CSS */}
@@ -81,7 +81,7 @@ export default function HeroSection() {
               px-4 py-2
               w-38
               border-2 border-blue-100/25
-              shadow-[0_0_32px_8px_rgba(59,130,246,0.35)]
+              shadow-[0_0_20px_8px_rgba(59,130,246,0.35)]
               z-20
               transition
             "
@@ -101,7 +101,7 @@ export default function HeroSection() {
               font-semibold text-lg text-white
               px-4 py-2
               border-2 border-purple-100/25
-              shadow-[0_0_32px_8px_rgba(168,85,247,0.35)]
+              shadow-[0_0_20px_8px_rgba(168,85,247,0.35)]
               z-20
               transition
             "
