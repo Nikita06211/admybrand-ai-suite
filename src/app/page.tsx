@@ -2,6 +2,7 @@
 import HeroSection from './components/HeroSection';
 import FeaturesSection from './components/FeaturesSection';
 import PricingSection from './components/PricingSection';
+import TestimonialsCarousel from './components/TestimonialsCarousel';
 
 export default function HomePage() {
   return (
@@ -9,6 +10,7 @@ export default function HomePage() {
       <HeroSection />
       <FeaturesSection />
       <PricingSection />
+      <TestimonialsCarousel/>
     </main>
   );
 }
