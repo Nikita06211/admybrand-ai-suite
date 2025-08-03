@@ -46,7 +46,7 @@ export const plans: Plan[] = [
       'Unlimited team members',
       'Advanced security features',
       'Custom integrations',
-      '24/7 premium support',
+      '24/7 premium customer support service',
     ],
   },
 ];
