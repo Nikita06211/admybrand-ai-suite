@@ -83,6 +83,46 @@ export default function TestimonialsCarousel() {
             ))}
           </div>
         </div>
+        <div className="w-full mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {testimonials.map((card) => (
+                <div
+                    key={card.name}
+                    className="bg-[#181c24]/95 border border-white/10 rounded-xl p-8 shadow-lg transition hover:shadow-[0_6px_32px_8px_rgba(155,84,231,0.18)] glass-effect"
+                >
+                    <div className="flex items-center gap-4 mb-4">
+                    <img
+                        src={card.image}
+                        alt={card.name}
+                        className="h-12 w-12 rounded-full border-2 border-blue-500 object-cover"
+                    />
+                    <div>
+                        <div className="font-bold text-white">{card.name}</div>
+                        <div className="text-sm text-gray-400">
+                        {card.title}
+                        {card.company && (
+                            <>
+                            {" "}<span className="text-blue-400">&bull; {card.company}</span>
+                            </>
+                        )}
+                        </div>
+                    </div>
+                    </div>
+                    <div className="flex mb-2">
+                    {Array(card.rating)
+                        .fill(0)
+                        .map((_, i) => (
+                        <span key={i} className="text-yellow-400 mr-1">★</span>
+                        ))}
+                    </div>
+                    <blockquote className="text-gray-300 text-base italic">
+                    “{card.content}”
+                    </blockquote>
+                </div>
+                ))}
+            </div>
+            </div>
+
       </div>
     </section>
   );
