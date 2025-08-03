@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection';
 import FeaturesSection from './components/FeaturesSection';
 import PricingSection from './components/PricingSection';
 import TestimonialsCarousel from './components/TestimonialsCarousel';
+import FaqSection from './components/FaqSection';
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <FeaturesSection />
       <PricingSection />
       <TestimonialsCarousel/>
+      <FaqSection/>
     </main>
   );
 }
