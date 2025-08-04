@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { faqs } from "./data/faqs";
 import { motion, AnimatePresence } from "framer-motion";
+import ButtonTag from "./ui/ButtonTag";
+import Image from "next/image";
 
 export default function FaqSection() {
   const [open, setOpen] = useState<number | null>(null);
@@ -10,7 +12,20 @@ export default function FaqSection() {
 
   return (
     <section className="py-24 bg-[#0c0e13]">
-      <div className="container mx-auto px-6 max-w-3xl">
+      <div className="container mx-auto px-4 text-center max-w-4xl">
+        <ButtonTag
+            className=""
+            content="AI-Powered Marketing Suite"
+            logo={<Image src="/icons/faq.png" 
+                    alt="AI Technology"
+                    width={20}
+                    height={20}
+                    className="object-contain"
+                    priority={false}/>}
+            borderColor= "border-cyan-600/20" 
+            bgColor="bg-cyan-600/20"
+            textColor="text-cyan-200"
+          />
         <h2 className="bg-gradient-to-r from-[#9b54e7] to-[#729cff] text-transparent bg-clip-text text-4xl font-extrabold mb-10 text-center">
           Everything You Need to Know
         </h2>

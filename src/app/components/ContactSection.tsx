@@ -49,8 +49,7 @@ export default function ContactSection() {
           Get in Touch
         </h2>
         <p className="text-lg text-gray-300 mb-10 text-center max-w-xl mx-auto">
-          <p>{"Ready to transform your marketing with AI? Let's discuss how ADmyBRAND AI Suite can help your business grow."}</p>
-
+          {"Ready to transform your marketing with AI? Let's discuss how ADmyBRAND AI Suite can help your business grow."}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col gap-8 md:col-span-1">

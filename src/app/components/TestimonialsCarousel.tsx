@@ -3,7 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import { testimonials } from "./data/testimonials";
 import { motion, AnimatePresence } from "framer-motion";
-
+import ButtonTag from "./ui/ButtonTag";
+import Image from "next/image";
 
 const AUTO_PLAY_INTERVAL = 3000; 
 
@@ -25,7 +26,15 @@ export default function TestimonialsCarousel() {
 
   return (
     <section className="py-24 bg-[#0c0e13]">
+      
       <div className="container mx-auto px-4 flex flex-col items-center">
+        <ButtonTag
+            content="Customer Success Stories"
+            logo={"☆"}
+            borderColor= "border-cyan-600/20" 
+            bgColor="bg-cyan-600/20"
+            textColor="text-cyan-200"
+          />
         <h2 className="bg-gradient-to-r from-[#9b54e7] to-[#729cff] text-transparent bg-clip-text text-4xl font-extrabold mb-12 text-center">
           Loved by Marketing Teams
         </h2>

@@ -1,12 +1,13 @@
 "use client";
-import { useState, useEffect } from "react";
-import { plans as allPlans } from "./data/plans"; // Your data file
+import { useState } from "react";
+import { plans as allPlans } from "./data/plans"; 
+import Image from "next/image";
+import ButtonTag from "./ui/ButtonTag";
 
 export default function PricingSection() {
   const [teamSize, setTeamSize] = useState(12);
   const [monthlyContent, setMonthlyContent] = useState(16000);
 
-  // Determine recommended plan index
   const planIdx = (() => {
     if (teamSize <= 10 && monthlyContent <= 25000) return 0;
     if (teamSize <= 50 && monthlyContent <= 100000) return 1;
@@ -16,14 +17,28 @@ export default function PricingSection() {
   return (
     <section className="py-24 bg-[#0c0e13]">
       <div className="container mx-auto px-4 text-center">
+        <ButtonTag
+            content="AI-Powered Marketing Suite"
+            logo={<Image src="/icons/price-tag.png" 
+                    alt="AI Technology"
+                    width={20}
+                    height={20}
+                    className="object-contain"
+                    priority={false}/>}
+            borderColor= "border-purple-600/20" 
+            bgColor="bg-purple-400/20"
+            textColor="text-purple-200"
+          />
         <h2 className="bg-gradient-to-r from-[#9b54e7] to-[#729cff] text-transparent bg-clip-text text-4xl font-extrabold mb-4">
           Choose Your Growth Plan
         </h2>
-        <p className="mb-5 text-lg text-gray-400">
-          Customize your plan based on your team size and content needs. Get instant pricing estimates.
+        <p className="text-lg text-gray-400">
+          Customize your plan based on your team size and content needs.
         </p>
-        {/* --- Calculator Sliders --- */}
-        <div className="mb-12 bg-[#18182e] p-8 rounded-xl shadow-lg flex flex-col md:flex-row gap-6 items-center justify-center max-w-3xl mx-auto">
+        <p className="mb-8 text-lg text-gray-400">
+           Get instant pricing estimates.
+        </p>
+        <div className="mb-28 bg-[#18182e] p-8 rounded-xl shadow-lg flex flex-col md:flex-row gap-6 items-center justify-center max-w-3xl mx-auto">
           <div className="flex-1 w-full">
             <label className="text-left block font-semibold text-white mb-1">
               <span className="text-purple-400">Team Size: {teamSize} members</span>
