@@ -23,7 +23,7 @@ export default function TestimonialsCarousel() {
   const goTo = (i: number) => setIndex(i);
 
   return (
-    <section className="py-24 bg-[#0c0e13]">
+    <section id="reviews" className="py-24 bg-[#0c0e13]">
       <div className="container mx-auto px-4 flex flex-col items-center">
         <ButtonTag
           content="Customer Success Stories"

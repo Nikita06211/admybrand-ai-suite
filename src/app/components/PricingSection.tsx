@@ -16,7 +16,7 @@ export default function PricingSection() {
   })();
 
   return (
-    <section className="py-24 bg-[#0c0e13]">
+    <section id="pricing" className="py-24 bg-[#0c0e13]">
       <div className="container mx-auto px-4 text-center">
         <ButtonTag
           content="AI-Powered Marketing Suite"

@@ -6,7 +6,7 @@ import FaqItem from "./ui/FaqItem";
 
 export default function FaqSection() {
   return (
-    <section className="py-24 bg-[#0c0e13]">
+    <section id="faq" className="py-24 bg-[#0c0e13]">
       <div className="container mx-auto px-4 text-center max-w-4xl">
         <ButtonTag
           content="AI-Powered Marketing Suite"

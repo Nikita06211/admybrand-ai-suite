@@ -6,7 +6,7 @@ import FeatureCard from "./ui/FeatureCard";
 
 export default function FeaturesSection() {
   return (
-    <section className="py-20 bg-[#0c0e13]">
+    <section id="features" className="py-20 bg-[#0c0e13]">
       <div className="container mx-auto px-4 text-center">
         <ButtonTag
           content="AI-Powered Marketing Suite"
