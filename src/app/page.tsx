@@ -5,6 +5,7 @@ import PricingSection from './components/PricingSection';
 import TestimonialsCarousel from './components/TestimonialsCarousel';
 import FaqSection from './components/FaqSection';
 import FooterSection from './components/FooterSection';
+import ContactSection from './components/ContactSection';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <PricingSection />
       <TestimonialsCarousel/>
       <FaqSection/>
+      <ContactSection/>
       <FooterSection/>
     </main>
   );
