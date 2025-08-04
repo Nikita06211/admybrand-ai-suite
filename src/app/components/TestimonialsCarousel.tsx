@@ -30,7 +30,7 @@ export default function TestimonialsCarousel() {
           Loved by Marketing Teams
         </h2>
         <span className="text-center text-lg text-gray-400 mb-10 -mt-5">
-            Join thousands of marketers who've transformed their campaigns with ADmyBRAND AI.
+            {"Join thousands of marketers who've transformed their campaigns with ADmyBRAND AI."}
         </span>
         <div className="relative w-full max-w-2xl">
           <AnimatePresence initial={false} mode="wait">
