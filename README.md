@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ADmyBRAND AI Suite
+
+An AI-powered marketing SaaS application built with Next.js and Tailwind CSS.  
+Transforms marketing workflows with AI-generated content, CRM automation, and analytics.
+
+---
+
+## Features
+
+- AI-Powered content creation for blogs, ads, and social media posts  
+- Interactive Pricing Calculator based on team size and content volume  
+- Smooth scrolling sticky navigation bar for easy section access  
+- Responsive UI with reusable components for fast development  
+- Testimonials carousel with auto-play and manual controls  
+- FAQ section with accordion-style expand/collapse functionality  
+- Contact form with field validation and user feedback  
+- Dark theme with gradient accents matching brand identity  
+
+---
+
+## Tech Stack
+
+- Next.js 13+ (App Router) with TypeScript  
+- Tailwind CSS for styling  
+- Framer Motion for animations  
+- Zod for schema validation  
+- React Icons for UI icons  
+- Next/Image for optimized image rendering  
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18 or newer  
+- npm or Yarn package manager  
 
-```bash
+### Installation
+
+git clone [https://github.com/yourusername/admybrand-ai-suite.git](https://github.com/Nikita06211/admybrand-ai-suite)
+cd admybrand-ai-suite
+npm install
+
+### Running the development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `/app` - Next.js app route pages and layouts  
+- `/components/ui` - Reusable UI components  
+- `/data` - Static data for features, pricing plans, testimonials, FAQs  
+- `/utils` - Utility functions and validation schemas  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
