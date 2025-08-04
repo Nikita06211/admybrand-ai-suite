@@ -1,4 +1,6 @@
+"use client";
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/outline";
+import ActionButtons from "./ui/ActionButtons";
 
 export default function FooterSection() {
   return (
@@ -12,12 +14,14 @@ export default function FooterSection() {
             {"Join thousands of marketing teams who've already revolutionized their campaigns with ADmyBRAND AI."}
           </p>
           <div className="flex justify-center gap-6">
-            <button className="bg-gradient-to-r from-[#858dfd] to-[#32aaff] text-white font-bold py-3 px-7 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-              Start Free Trial →
-            </button>
-            <button className="border border-[#3d44a6] text-[#3d44a6] font-bold py-3 px-7 rounded-lg hover:bg-[#3d44a6]/20 transition-colors duration-300">
-              Schedule Demo
-            </button>
+            <ActionButtons
+              mainLabel="Start Free Trial"
+              secondaryLabel="Schedule Demo"
+              showArrow={true}
+              disabled={false}
+              onMainClick={() => {/* handle trial click */}}
+              onSecondaryClick={() => {/* handle demo click */}}
+            />
           </div>
         </div>
         <div className="border-t border-[#222438] w-full my-8"></div>

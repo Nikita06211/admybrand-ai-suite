@@ -1,6 +1,7 @@
 "use client";
 import Image from 'next/image';
 import ButtonTag from './ui/ButtonTag';
+import ActionButtons from './ui/ActionButtons';
 
 export default function HeroSection() {
   return (
@@ -34,12 +35,13 @@ export default function HeroSection() {
             Revolutionize your marketing strategy with cutting-edge AI tools. Create compelling campaigns, analyze performance, and scale your brand like never before.
           </p>
           <div className="flex gap-4 mb-8">
-            <button className="bg-gradient-to-r from-[#9b54e7] to-[#3d7eff] text-white font-bold py-3 px-8 rounded-lg shadow-xl transition hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-              Start Free Trial
-            </button>
-            <button className="border border-[#729cff] bg-transparent text-[#729cff] font-bold py-3 px-8 rounded-lg shadow-none transition hover:bg-[#1a2540]/10 hover:border-[#86e0ff] hover:text-[#86e0ff] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-              Watch Demo
-            </button>
+            <ActionButtons
+              mainLabel="Start Free Trial"
+              secondaryLabel="Watch Demo"
+              showArrow={false}
+              onMainClick={() => {/* handle trial click */}}
+              onSecondaryClick={() => {/* handle demo click */}}
+            />
           </div>
           <ul className="flex flex-wrap gap-6 text-gray-400 font-medium text-sm">
             <li>🔒 No Credit Card Required</li>

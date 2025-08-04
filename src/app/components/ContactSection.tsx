@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { contactSchema, ContactFormFields } from "@/utils/contactSchema";
+import ActionButtons from "./ui/ActionButtons";
 
 const initialFields: ContactFormFields = {
   name: "",
@@ -192,14 +193,15 @@ export default function ContactSection() {
               />
               {errors.message && <p className="text-xs text-red-400 mt-1">{errors.message}</p>}
             </div>
-            <button
+            <ActionButtons
+              className="items-center justify-center w-full"
+              mainLabel={submitted ? "Sending..." : "Send Message"}
+              // secondaryLabel="Watch Demo"
+              showArrow={true}
               disabled={submitted}
-              className="rounded-lg w-full py-3 font-bold bg-gradient-to-r from-[#7ce3ff] to-[#729cff] text-white shadow-lg mt-2 disabled:opacity-70 transition-all flex items-center justify-center gap-2"
-              type="submit"
-            >
-              <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path d="M3 12l18-6-6 18-2-8-8-2z" /></svg>
-              {submitted ? "Sending..." : "Send Message"}
-            </button>
+              onMainClick={() => {/* handle trial click */}}
+              onSecondaryClick={() => {/* handle demo click */}}
+            />
             {submitted && (
               <div className="text-green-400 text-center mt-3 font-medium">
                 Message sent! We&apos;ll be in touch soon.
