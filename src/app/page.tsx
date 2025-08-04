@@ -4,6 +4,7 @@ import FeaturesSection from './components/FeaturesSection';
 import PricingSection from './components/PricingSection';
 import TestimonialsCarousel from './components/TestimonialsCarousel';
 import FaqSection from './components/FaqSection';
+import FooterSection from './components/FooterSection';
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <PricingSection />
       <TestimonialsCarousel/>
       <FaqSection/>
+      <FooterSection/>
     </main>
   );
 }

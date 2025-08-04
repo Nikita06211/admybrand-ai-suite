@@ -57,6 +57,14 @@ export default function FaqSection() {
             </div>
           ))}
         </div>
+        <div className="text-gray-400 mt-4 text-center">
+            Still have questions?
+        </div>
+        <div className="text-center mt-2">
+            <span className="text-purple-500 text-center hover:text-purple-300 hover:cursor-pointer">Contact Support</span>
+            <span className="text-gray-400 mx-2 rounded-full text-2xl">.</span>
+            <span className="text-purple-500 hover:text-purple-300 hover:cursor-pointer">View Documentation</span>
+        </div>
       </div>
     </section>
   );
