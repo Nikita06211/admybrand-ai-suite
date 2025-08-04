@@ -1,4 +1,3 @@
-// src/components/FeaturesSection.tsx
 "use client";
 import {features} from "./data/features"
 import {motion} from "framer-motion";
@@ -23,10 +22,10 @@ export default function FeaturesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 0.75,
-                delay: i * 0.08, // stagger cards
-                ease: [0.22, 1, 0.36, 1], // ease-out-cubic
+                delay: i * 0.08, 
+                ease: [0.22, 1, 0.36, 1],
               }}
-              viewport={{ once: true, amount: 0.25 }} // triggers animation when 25% of card is in view, only once
+              viewport={{ once: true, amount: 0.25 }} 
             >
               <img
                 src={feature.icon}

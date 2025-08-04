@@ -15,7 +15,7 @@ export default function FaqSection() {
           Everything You Need to Know
         </h2>
         <span className="mt-4 text-gray-400">
-            Have questions? We've got answers. Can't find what you're looking for? Contact our support team.
+            {"Have questions? We've got answers. Can't find what you're looking for? Contact our support team."}
         </span>
         <div className="mt-8 rounded-2xl shadow-xl bg-[#161924]/80 border border-white/10 glass-effect px-4 md:px-8 py-6">
           {faqs.map((faq, i) => (

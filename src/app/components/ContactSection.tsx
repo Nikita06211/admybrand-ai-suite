@@ -53,14 +53,12 @@ export default function ContactSection() {
 
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* LEFT COLUMN: INFO BOXES STACKED */}
           <div className="flex flex-col gap-8 md:col-span-1">
             <div className="rounded-xl bg-[#14171b]/90 p-8 text-white shadow-lg h-fit">
               <h3 className="font-bold text-lg mb-4">Contact Information</h3>
               <ul className="space-y-5">
                 <li className="flex items-center gap-4">
                   <span className="bg-purple-900/30 rounded-full p-2">
-                    {/* Mail Icon */}
                     <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16 2H8C6.346 2 5 3.346 5 5v14c0 1.654 1.346 3 3 3h8c1.654 0 3-1.346 3-3V5c0-1.654-1.346-3-3-3zm0 2a1 1 0 011 1v.207l-5 3.03-5-3.03V5a1 1 0 011-1h8zm1 16c0 .551-.449 1-1 1H8c-.551 0-1-.449-1-1V7.373l5 3.031 5-3.031V18z" />
                     </svg>
@@ -72,7 +70,6 @@ export default function ContactSection() {
                 </li>
                 <li className="flex items-center gap-4">
                   <span className="bg-purple-900/30 rounded-full p-2">
-                    {/* Phone Icon */}
                     <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 5.75A5.75 5.75 0 018.75 0h6.5A5.75 5.75 0 0121 5.75v12.5A5.75 5.75 0 0115.25 24h-6.5A5.75 5.75 0 013 18.25V5.75zm6.657 2.486a.75.75 0 00-1.06 1.06l3.535 3.535a.75.75 0 001.06 0l3.535-3.535a.75.75 0 00-1.06-1.06l-2.655 2.655V6a.75.75 0 10-1.5 0v4.891l-2.655-2.655z" />
                     </svg>
@@ -84,7 +81,6 @@ export default function ContactSection() {
                 </li>
                 <li className="flex items-center gap-4">
                   <span className="bg-purple-900/30 rounded-full p-2">
-                    {/* Marker Icon */}
                     <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9a2 2 0 110-4 2 2 0 010 4z" />
                     </svg>
@@ -107,7 +103,6 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* RIGHT COLUMN: FORM (SPANS TWO ON MD+) */}
           <form
             className="rounded-xl border-1 border-gray-700 bg-[#14171b]/90 p-8 shadow-lg text-white space-y-6 md:col-span-2"
             onSubmit={handleSubmit}

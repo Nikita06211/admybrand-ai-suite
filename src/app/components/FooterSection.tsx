@@ -1,17 +1,15 @@
-// src/components/FooterSection.tsx
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/outline";
 
 export default function FooterSection() {
   return (
     <footer className="bg-[#0b0d13] text-gray-300 pt-20 pb-12  border-gray-700">
       <div className="container mx-auto px-6 max-w-7xl">
-        {/* CTA Section */}
         <div className="bg-[#14171b] rounded-xl p-12 mb-16 text-center shadow-glow-purple">
           <h2 className="bg-gradient-to-r from-[#9b54e7] to-[#729cff] text-transparent bg-clip-text text-4xl font-extrabold mb-4">
             Ready to Transform Your Marketing?
           </h2>
           <p className="text-gray-300 mb-6 max-w-xl mx-auto">
-            Join thousands of marketing teams who've already revolutionized their campaigns with ADmyBRAND AI.
+            {"Join thousands of marketing teams who've already revolutionized their campaigns with ADmyBRAND AI."}
           </p>
           <div className="flex justify-center gap-6">
             <button className="bg-gradient-to-r from-[#858dfd] to-[#32aaff] text-white font-bold py-3 px-7 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
@@ -23,12 +21,9 @@ export default function FooterSection() {
           </div>
         </div>
         <div className="border-t border-[#222438] w-full my-8"></div>
-        {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-12 text-sm">
-          {/* About Section */}
           <div className="md:col-span-2 space-y-6">
             <div className="inline-flex items-center text-white font-bold text-xl gap-2 mb-2">
-              {/* Replace below with your logo */}
               <div className="w-7 h-7 bg-blue-400 rounded-full"></div> 
               ADmyBRAND AI
             </div>
