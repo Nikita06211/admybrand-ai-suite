@@ -38,14 +38,16 @@ Transforms marketing workflows with AI-generated content, CRM automation, and an
 
 ### Installation
 
-git clone [https://github.com/yourusername/admybrand-ai-suite.git](https://github.com/Nikita06211/admybrand-ai-suite)
+```bash
+git clone https://github.com/Nikita06211/admybrand-ai-suite.git
 cd admybrand-ai-suite
 npm install
+```
 
 ### Running the development server
-
+```bash
 npm run dev
-
+```
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
 
