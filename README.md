@@ -9,11 +9,12 @@ Transforms marketing workflows with AI-generated content, CRM automation, and an
 
 - AI-Powered content creation for blogs, ads, and social media posts  
 - Interactive Pricing Calculator based on team size and content volume  
-- Smooth scrolling sticky navigation bar for easy section access  
+- Smooth scrolling sticky navigation bar for easy section access
 - Responsive UI with reusable components for fast development  
 - Testimonials carousel with auto-play and manual controls  
 - FAQ section with accordion-style expand/collapse functionality  
-- Contact form with field validation and user feedback  
+- Contact form with field validation and user feedback
+- Blog section with featured and latest articles, filters, and search
 - Dark theme with gradient accents matching brand identity  
 
 ---
